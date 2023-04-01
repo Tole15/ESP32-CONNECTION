@@ -2,6 +2,10 @@ import csv
 import math
 import os
 # definir el centro de la circunferencia
+# Tome en cuenta que en este caso se utilizo centro 0,0 sin embargo para el uso  final debe ser modificado segun la calibración del 0 de los servos, y la longitud del los eslabones
+#En el caso de la simulación anexada como "AREA DE TRABAJO 5 BARRAS" puede usar el archivo gbb para modificar el tamaño de los eslabones y el área del trabajo
+#Asi mismo se puede observar la posición inicial.
+#Por ende en nuestro trabajo final será 5,13 dentro del formato  (x,y)
 centro_x = 0
 centro_y = 0
 
