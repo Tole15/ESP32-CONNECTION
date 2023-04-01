@@ -3,6 +3,19 @@ Using Arduino IDE and html with JavaScript, in a web page, connected to a server
 
 A robotic mechanism has been developed to control the movement of a figure tracing instrument on a plane using two servo motors, and a third servo motor to control the mechanism and elevation in the z-axis. The working area of the mechanism is 50 cm2. The user controls the mechanism through a web application that presents a set of basic figures to select from. This mechanism allows for precise tracing of figures on the plane quickly and easily, making it suitable for educational and design applications.
 
+More especific:
+The Arduino IDE is an integrated development environment used for programming Arduino microcontrollers. It includes a code editor, compiler, and uploader for the Arduino board.
+
+To control an Arduino board from a web page, we can use HTML and JavaScript to create a user interface, and send commands to the board via the Serial port. The Serial port is a hardware interface on the Arduino board that allows us to communicate with the board over a USB cable or other serial connection.
+
+To send commands from a web page to an Arduino board, we need to establish a connection between the two devices. We can do this by running a web server on the Arduino board and connecting to it from the web page using an IP address and port number.
+
+In this case, we're connecting to a server running on port 80, which is the default port for HTTP traffic. We can use XMLHttpRequests in JavaScript to send commands to the Arduino board by making GET or POST requests to the server.
+
+When a button on the web page is clicked, a JavaScript function is called that sends a command to the Arduino board over the Serial port. The Arduino board receives the command and executes the appropriate action based on the code in its sketch.
+
+This can be a powerful way to control physical devices and sensors connected to an Arduino board from a web interface. With the right combination of hardware and software, it's possible to create complex and interactive applications that can be accessed from anywhere with an internet connection.
+
 INDEX FILE:
 
 This is a HTML webpage that allows the user to control a drawing robot using two buttons. The webpage is designed with a green color scheme and includes a header and footer. The header displays the title of the webpage, which is "Control Online de Stand The Pencil". The body of the webpage contains two buttons, one for drawing a rectangle and the other for drawing a triangle. The buttons are centered on the webpage and have a large font size.
